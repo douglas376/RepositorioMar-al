@@ -1,0 +1,26 @@
+package projetos;
+
+import javax.swing.JOptionPane;
+
+public class aula_03Desafio_01 {
+	
+public static void main(String[] args) {
+		
+		String veiculo = "";
+		double consumo = 0.0;
+		String cidade = "";
+		double distancia = 0.0;
+		double litros = 0.0;
+		
+		veiculo = JOptionPane.showInputDialog("Digite o nome do veiculo");
+		consumo = Double.parseDouble(JOptionPane.showInputDialog("Digite o consumo medio por km"));
+		cidade = JOptionPane.showInputDialog("Digite o nome da cidade");
+		distancia = Double.parseDouble(JOptionPane.showInputDialog("Qual a distancia da cidade"));
+		
+		litros = distancia / consumo;
+		
+		JOptionPane.showMessageDialog(null, " O veiculo " +veiculo+ " consumiu " +litros+ " litros para chegar até a cidade " +cidade );
+	}
+
+
+}
